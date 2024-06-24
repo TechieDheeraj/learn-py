@@ -3,6 +3,7 @@
 import argparse
 from basicds.linkedlist import linkedlist
 from collections_intro import *
+from lambdas import *
 
 """
 Argument specifiers:
@@ -18,6 +19,7 @@ Argument specifiers:
 %x/%X - Integers in hex representation (lowercase/uppercase)
 
 """
+
 
 def get_args():
     parser = argparse.ArgumentParser(
@@ -42,7 +44,7 @@ def main():
     print(astring.endswith("ld"))
     print(astring.upper())
 
-    mylist = [1,2,3]
+    mylist = [1, 2, 3]
     print("list is %s" % mylist)
 
     for x in range(5):
@@ -51,7 +53,7 @@ def main():
         print(x)
     for x in range(3, 7, 2):
         print(x)
-    else: # else clause for false condition in loops
+    else:  # else clause for false condition in loops
         print("x value exceeds boundary 6")
 
     # insert in linked list
@@ -62,8 +64,8 @@ def main():
     ll.push_front(40)
     print(ll)
 
+    run_lambdas()
     check_collections()
-
 
 if __name__ == "__main__":
     main()
