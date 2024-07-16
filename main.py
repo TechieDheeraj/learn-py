@@ -4,6 +4,7 @@ import argparse
 from basicds.linkedlist import linkedlist
 from collections_intro import *
 from lambdas import *
+import sys
 
 """
 Argument specifiers:
@@ -37,7 +38,9 @@ def get_args():
 
 def main():
     # get_args()
-    astring = "Hello World"
+    astring = "Hello World people"
+    print(">>> refcount is ", sys.getrefcount(astring))
+
     print(astring)
     print(astring[::-1])
     print(astring.startswith("Hel"))

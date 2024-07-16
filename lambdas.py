@@ -13,6 +13,7 @@ def run_lambdas():
     # used inside sorted function
     l = ["0", "-1", "-2", "2", "3"]
     print("sorted numerically: ", sorted(l, key=lambda x: int(x)))
+    print("original list is ", l)
 
     """
        The filter() function in Python filters elements from an iterable 

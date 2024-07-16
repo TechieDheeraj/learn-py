@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import node
 
 
-class LinkedList():
+class LinkedList:
     def __init__(self):
         self.root = node.Node(val=0)
         self.len = 0
